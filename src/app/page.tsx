@@ -32,13 +32,17 @@ export default function Home() {
 						placeholder="Search"
 						className=" w-64 px-4 py-2 border border-gray-300 rounded-md"
 					/>
-
-					<Link href={`/recipe/${searchKey}`} className="group">
-						<FaArrowRight
-							className=" cursor-pointer text-green-600 shadow-md rounded-full bg-white p-2 group-hover:bg-green-600 group-hover:text-white transition duration-300 ease-in-out"
-							size={40}
-						/>
-					</Link>
+					<button
+						disabled={searchKey.length === 0}
+						className=" bg-transparent border-0 outline-none"
+					>
+						<Link href={`/recipe/${searchKey}`} className="group">
+							<FaArrowRight
+								className=" cursor-pointer text-green-600 shadow-md rounded-full bg-white p-2 group-hover:bg-green-600 group-hover:text-white transition duration-300 ease-in-out"
+								size={40}
+							/>
+						</Link>
+					</button>
 				</div>
 			</div>
 		</main>
