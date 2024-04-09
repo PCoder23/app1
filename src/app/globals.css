@@ -109,7 +109,8 @@ html {
 
 body {
 	font-family: var(--bodyFont);
-	background: url("../../public/images/bgImage.jpg");
+	/* background: url("../../public/images/bgImage.jpg"); */
+	background: linear-gradient(135deg, #fdfcfd 0%, #e2f3ef 100%);
 	background-size: cover;
 	color: var(--textColor);
 	max-height: 10vh !important;
