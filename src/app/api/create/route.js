@@ -30,28 +30,3 @@ export const POST = async (req)=>{
         }
     }
 }
-
-
-
-// model Recipe {
-//     id            String  @default(cuid()) @id
-//     slug          String  @unique
-//     title         String
-//     description   String
-//     prepTime      Int
-//     cookTime      Int
-//     servings      Int
-//     tags          String[]
-//     instructions  String[]
-//     ingredients   String[]
-//     tools         Tool[]
-//     image         String
-//   }
-  
-//   model Tool {
-//     id        Int     @id @default(autoincrement())
-//     name      String
-//     link      String
-//     recipe    Recipe  @relation(fields: [recipeId], references: [id])
-//     recipeId  String
-//   }
