@@ -40,7 +40,7 @@ const RecipeForm = () => {
 			[name]:
 				name === "tags" || name === "instructions" || name == "ingredients"
 					? value.split(",")
-					: value,
+					: name === "prepTime" || name === "cookTime" || name === "servings"? parseInt(value) : value,
 		}));
 	};
 
